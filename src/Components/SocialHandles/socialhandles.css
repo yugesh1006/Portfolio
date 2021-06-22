@@ -1,0 +1,64 @@
+.social_handles {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+}
+
+.social_handles a {
+	text-decoration: none;
+	color: #588ef7 !important;
+	margin-bottom: 20px;
+}
+.social_handles a:nth-child(4) {
+	font-family: "Dancing Script", cursive;
+	font-weight: bolder;
+}
+.social_handles a:nth-child(even) {
+	animation: popIn 1.5s ease-in-out 1;
+}
+.social_handles a:nth-child(odd) {
+	animation: popInodd 1.5s ease-in 1;
+}
+@keyframes popInodd {
+	0% {
+		margin-right: -50px;
+		transform: scale(0);
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.2;
+	}
+	90% {
+		transform: scale(1.2);
+	}
+	100% {
+		margin-right: 0%;
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+@keyframes popIn {
+	0% {
+		margin-left: -50px;
+		transform: scale(0);
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.2;
+	}
+	90% {
+		transform: scale(1.2);
+	}
+	100% {
+		margin-right: 0%;
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+@media (max-width: 800px) {
+	.social_handles {
+		display: none;
+	}
+}

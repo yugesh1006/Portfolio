@@ -1,0 +1,44 @@
+.contact {
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 500px;
+}
+.contact h3 {
+	font-family: "Satisfy", cursive;
+	font-size: 20px;
+}
+.contact h1 {
+	font-family: "Roboto Slab", serif;
+	font-size: 50px;
+}
+.contact p {
+	font-family: "Signika Negative", sans-serif;
+	padding: 20px;
+	font-size: 25px;
+	width: 45%;
+	text-align: center;
+}
+.contact button {
+	padding: 10px 40px;
+	font-size: 20px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	background-color: #eca06d;
+	font-family: "Roboto Slab", serif;
+	font-weight: bolder;
+	color: #1d3461;
+}
+.contact button:hover {
+	background-color: #f7ba92;
+	border: 1px solid #ec5f01;
+	transition: all 0.2s ease-in-out;
+	transform: skew(-5deg);
+}
+@media screen and (max-width: 500px) {
+	.contact p {
+		width: 80%;
+	}
+}

@@ -1,0 +1,62 @@
+.about_me {
+	width: fit-content;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 200px;
+}
+.left {
+	flex: 0.8;
+}
+.about_me h3 {
+	font-size: 30px;
+	color: #1f487e;
+	font-family: "Roboto Slab", serif;
+	margin-bottom: 30px;
+	opacity: 0;
+	transition: all 1s ease-in-out;
+}
+.about_me .h3_inview {
+	opacity: 1;
+}
+.about_me p {
+	padding-left: 10px;
+	font-size: 20px;
+	font-family: "Signika Negative", sans-serif;
+	margin-bottom: 20px;
+	opacity: 0;
+	transition: all 1s ease-in-out;
+	transition-delay: 1s;
+}
+.about_me .p_inview {
+	opacity: 1;
+}
+.about_me img {
+	opacity: 0;
+	transform: scale(0.6);
+}
+.about_me .img_inview {
+	opacity: 1;
+	transform: scale(1);
+}
+.about_me .mypic {
+	height: 300px;
+	border-radius: 20px;
+	filter: blur(1px);
+	transition: all 0.5s ease-in-out;
+}
+.about_me .mypic:hover {
+	filter: blur(0px);
+	transform: scale(0.96);
+}
+@media (max-width: 700px) {
+	.about_me {
+		flex-direction: column;
+		margin-left: 20px;
+		margin-right: 20px;
+		align-items: center;
+	}
+	.about_me .mypic {
+		width: 180px;
+		height: auto;
+	}
+}
