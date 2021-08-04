@@ -11,7 +11,7 @@ const Projects = () => {
         triggerOnce: true	
     })
     const [ref1, inView1] = useInView({
-        threshold: 1,
+        threshold: 0,
         delay:0.3
     })
     const content =data.projects;
