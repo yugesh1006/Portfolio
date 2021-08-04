@@ -7,7 +7,7 @@ import { useInView } from "react-intersection-observer";
 
 const Projects = () => {
     const [ref, inView] = useInView({
-        threshold: 0,
+        threshold: 0.4,
         triggerOnce: true	
     })
     const [ref1, inView1] = useInView({
@@ -19,9 +19,9 @@ const Projects = () => {
     return ( 
         <div className="projects">
             <h3 ref={ref1} className={`${inView1 ? "h3_inview": "" }`}>Few Things which I've build</h3>
-            <div className="projects_container">
+            <div ref={ref} className="projects_container">
             {content&&content.map((c)=>(
-                <div ref={ref} key={c.id} className={`projects_dis ${inView ? "project_inview":""}`}>
+                <div  key={c.id} className={`projects_dis ${inView ? "project_inview":""}`}>
                 <img src={c.image} alt="Moive App"/>
                 <div className="about_project">
                     <h5>Featured Project</h5>
