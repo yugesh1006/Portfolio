@@ -1,6 +1,7 @@
 import movieApp from "../img/know your show.jpg";
 import covidApp from "../img/Capture.jpg";
 import rockApp from "../img/rock.jpg";
+import socialApp from "../img/socailApp.jpg";
 
 const data ={
     projects:[
@@ -27,7 +28,15 @@ const data ={
             image: rockApp,
             gitHub:'https://github.com/yugesh1006/rock-paper-scissors',
             websiteLink:'https://yugesh1006.github.io/rock-paper-scissors/'
-        }       
+        },
+        {
+            id:'4',
+            title:'Social App',
+            description:['A Full-Stack app where we have authentication, registration and each registered user can post some post or a note. Users can deletethe post and comment on the post and like the post'],
+            image: socialApp,
+            gitHub:'https://github.com/yugesh1006/mernG-Client',
+            websiteLink:'https://post-social.netlify.app/'
+        }             
     ],
     socailHandles:{
         email:"yugeshmessi999@gmail.com",
